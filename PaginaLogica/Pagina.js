@@ -33,3 +33,18 @@ function moverCarrusel(direccion) {
 
     images.style.transform = `translateX(-${index * 100}%)`;
 }
+// problema redirigir 
+
+function redirigirProblema(event) {
+    // Prevenir el comportamiento por defecto del enlace
+    event.preventDefault();
+
+    // Verificar si estamos en la página principal (index.html)
+    if (window.location.pathname === "/index.html" || window.location.pathname === "/") {
+        // Si estamos en index.html, desplazarnos a la sección problema
+        document.getElementById("problema").scrollIntoView({ behavior: "smooth" });
+    } else {
+        // Si no estamos en index.html, redirigir a problema.html
+        window.location.href = "problema.html";
+    }
+}

@@ -1,8 +1,8 @@
 function redirectToRecycleForm() {
-    window.location.href = 'formulario.html'; // Cambia 'ruta_a_tu_formulario.html' por la ruta correcta del archivo HTML
+    window.location.href = 'formulario.html'; 
 }
 function generateTicket(event) {
-    event.preventDefault(); // Evitar que el formulario recargue la página
+    event.preventDefault(); 
 
     // Obtener valores del formulario
 const name = document.getElementById('name').value;
@@ -13,29 +13,29 @@ let rate = parseFloat(document.getElementById('rate').value);
 
 // Asignar el rate según el material seleccionado
 switch (material) {
-    case 'Papel': // Reemplaza 'material1' por el nombre de tu material
-        rate = 1500; // Reemplaza 10 por el valor de rate correspondiente
+    case 'Papel': 
+        rate = 1500; 
         break;
-        case 'Vidrio': // Reemplaza 'material2' por el nombre de tu material
-        rate = 500; // Reemplaza 15 por el valor de rate correspondiente
+        case 'Vidrio': 
+        rate = 500; 
         break;
-        case 'Plastico': // Reemplaza 'material3' por el nombre de tu material
-        rate = 3500; // Reemplaza 20 por el valor de rate correspondiente
+        case 'Plastico':
+        rate = 3500; 
         break;
-        case 'Baterias': // Reemplaza 'material2' por el nombre de tu material
-        rate = 5000; // Reemplaza 15 por el valor de rate correspondiente
+        case 'Baterias': 
+        rate = 5000; 
         break;
-        case 'Madera': // Reemplaza 'material2' por el nombre de tu material
-        rate = 1500; // Reemplaza 15 por el valor de rate correspondiente
+        case 'Madera': 
+        rate = 1500; 
         break;
-        case 'Cobre': // Reemplaza 'material2' por el nombre de tu material
-        rate = 23000; // Reemplaza 15 por el valor de rate correspondiente
+        case 'Cobre': 
+        rate = 23000;
         break;
-        case 'Aluminio': // Reemplaza 'material2' por el nombre de tu material
-        rate = 6000; // Reemplaza 15 por el valor de rate correspondiente
+        case 'Aluminio': 
+        rate = 6000; 
         break;
     default:
-        rate = 0; // En caso de que no se seleccione un material válido
+        rate = 0; 
         break;
 }
 
