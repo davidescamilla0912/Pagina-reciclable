@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/PaginasEstilos/INICIO.css">
     <title>ECO SMART</title>
     <script src="/PaginaLogica/logica.js"></script>
+    <script src="/PaginaLogica/Pagina.js"></script>
 </head>
 
 <body>
@@ -22,7 +23,6 @@
             <nav class="navbar">
                 <ul>
                     <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#problema">PROBLEMA</a></li>
                     <li><a href="#informacion">Beneficios</a></li>
                     <li><a href="#reciclar">RECICLAR</a></li>
                     <li><a href="#contacto">CONTÁCTANOS</a></li>
@@ -166,23 +166,29 @@
             <h2>UNETE A LA COMUNIDAD</h2>
             <a href="register.html">
                 <button on click="agregar aqui pagina'" class="recilaje">!Conocenos Mas!</button>    
+                <div class="carrusel">
+                    <div class="imagenes">
+                        <img src="img1.jpg" alt="Imagen 1">
+                        <img src="img2.jpg" alt="Imagen 2">
+                        <img src="img3.jpg" alt="Imagen 3">
+                    </div>
+                </div>
             </a>
 
         </div>
 
     </main>
 
-    <footer class="footer">
-
-        <div class="container">
-            <div class="footer-link">
+    
 
                 <div class="link-img">
                     <img src="/Imagenes/LogoCompleto.png" alt="">
                     <div class="socials-2">
-                        <a href="#"> <img src="/Imagenes/r1.svg" alt=""></a>
-                        <a href="#"> <img src="/Imagenes/r2.svg" alt=""></a>
-                        <a href="#"> <img src="/Imagenes/r3.svg" alt=""></a>
+                        <a href="#"> <img src="/Imagenes/basuras.jpg" alt=""></a>
+                        <a href="#"> <img src="/Imagenes/plastico.jpg" alt=""></a>
+                        <a href="#"> <img src="/Imagenes/glass.png" alt=""></a>
+                        <button class="prev" onclick="moverCarrusel(-1)">&#10094;</button>
+                        <button class="next" onclick="moverCarrusel(1)">&#10095;</button>
                     </div>
                 </div>
 
@@ -194,35 +200,26 @@
                         <li><a href="#">David Escamilla - Desarrollador Frontend---Universidad libre</a></li>
                         <li><a href="#">Jeremy Fontalvo - Desarrollador Backend---Universidad libre</a></li>
                         <li><a href="#">Nadin Manzur - coordinadores y documentadores---Universidad libre</a></li>  
-                        <br>        
-                        <img src="/Imagenes/libre.png" width="100px">
-                                    
+                        <li><a href="#">Marilis Londoño - coordinadores y documentadores---Universidad libre</a></li>  
+                        <br>                      
                   </ul>
-
                 </div>
             </section>
 
-                <div class="link">
+               
 
+            <footer class="footer">
 
+                <div class="container">
+                    <div class="footer-link">
 
-                </div>
-
-            </div>
-             
             <div class="footer-copy">
                 <p> Universidad libre </p>
             </div>
-
             
         </div>
-
-        <script src="reciclaje.js"></script>
-        
-        
-        
+                </div>
     </footer>
-
 
 </body>
 

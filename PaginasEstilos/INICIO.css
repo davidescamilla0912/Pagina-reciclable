@@ -416,6 +416,29 @@ margin: 0;
     box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.5);
 }
 
+.carrusel {
+    width: 100%;
+    overflow: hidden;  /* Oculta las imágenes fuera del área visible */
+    position: relative;
+}
+
+.imagenes {
+    display: flex; /* Coloca las imágenes en línea */
+    transition: transform 1s ease-in-out; /* Añade una transición suave */
+}
+
+.imagenes img {
+    width: 100%;  /* Ajusta el tamaño de las imágenes */
+    max-width: 100%;
+    display: block; /* Elimina el espacio en blanco debajo de las imágenes */
+}
+
+/* Estilo para el contenedor de la imagen */
+img {
+    width: 100%;
+    height: auto;
+}
+
 
 
 @media(max-width:991px) {
