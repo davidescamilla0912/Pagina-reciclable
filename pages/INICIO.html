@@ -21,12 +21,11 @@
 
             <nav class="navbar">
                 <ul>
-                    <li><a href="#">INICIO</a></li>
-                    <li><a href="#">PROBLEMA</a></li>
-                    <li><a href="#">SOLUCIÓN</a></li>
-                    <li><a href="#">RECICLAR</a></li>
-                    <li><a href="#">CONTÁCTANOS</a></li>
-                    <li><a href="#">SOPORTE</a></li>
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#problema">PROBLEMA</a></li>
+                    <li><a href="#informacion">Beneficios</a></li>
+                    <li><a href="#reciclar">RECICLAR</a></li>
+                    <li><a href="#contacto">CONTÁCTANOS</a></li>
                 </ul>
             </nav>
 
@@ -39,6 +38,7 @@
 
         <div class="header-content container">
             <div class="header-txt">
+                <section id="inicio" ><section>
                 <h1>RECICLAR ES SANAR</h1>
                 <p>
                     Bienvenido a nuestra plataforma dedicada a mejorar las prácticas de reciclaje en nuestro país. Aquí
@@ -58,16 +58,16 @@
     </header>
 
 
-    <section class="about">
+    <section id="reciclar" style="background-color: rgb(255, 255, 255);">
         <div class="about-content container">
             <img class="ab1" src="/Imagenes/ab1.png" alt="">
-            <img class="ab2" src="/Imagenes/ab2.png" alt="">
             <img class="ab3" src="/Imagenes/ab3.png" alt="">
 
             <div class="about-img">
                 <img src="/Imagenes/recycling-294079_640.webp" alt="">
             </div>
             <div class="about-txt">
+                <br>
                 <h2>¿Cómo Reciclar?</h2>
                 <p>Reciclar correctamente reduce el impacto ambiental y promueve una economía circular en la que los materiales vuelven a utilizarse.</p>
 
@@ -80,13 +80,17 @@
                 
 
             </div>
-
-
         </div>
-
+<br>
+        <div>
+            <main class="contact container">
+                <h2>Formulario de Reciclaje</h2>
+                <button class="recilaje" onclick="redirectToRecycleForm()">¡Conoce cómo Reciclar!</button>
+            </main>
+        </div>
     </section>
 
-    <section class="information">
+    <section id ="informacion" class="information" style="background-color: rgb(250, 250, 250);">
 
         <div class="information-content container">
             <img class="in1" src="/Imagenes/ab1.png" alt="">
@@ -104,7 +108,7 @@
     <main class="contact container">
         <div class="contant-table">
             <span>RESIDUOS FISICOS</span>
-            <h3>RESIDUOS</h3>
+            <h3>Tabla de infomracion</h3>
 
             <table class="Residuos">
                 <tr>
@@ -160,8 +164,8 @@
         <div class="form-content">
 
             <h2>UNETE A LA COMUNIDAD</h2>
-            <a href="login.html">
-                <button class="recilaje">!Conocenos Mas!</button>
+            <a href="register.html">
+                <button on click="agregar aqui pagina'" class="recilaje">!Conocenos Mas!</button>    
             </a>
 
         </div>
@@ -182,61 +186,37 @@
                     </div>
                 </div>
 
-
+                <section id ="contacto">
                 <div class="link">
 
                     <h3>Miembros</h3>
                     <ul>
-                        <li><a href="#">David Escamilla</a></li>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Lorem</a></li>
-                    </ul>
+                        <li><a href="#">David Escamilla - Desarrollador Frontend---Universidad libre</a></li>
+                        <li><a href="#">Jeremy Fontalvo - Desarrollador Backend---Universidad libre</a></li>
+                        <li><a href="#">Nadin Manzur - coordinadores y documentadores---Universidad libre</a></li>  
+                        <br>        
+                        <img src="/Imagenes/libre.png" width="100px">
+                                    
+                  </ul>
 
                 </div>
+            </section>
 
                 <div class="link">
 
-                    <h3>Lorem</h3>
-                    <ul>
-                        <li><a href="#">Jeremy Fontalvo</a></li>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Lorem</a></li>
-                    </ul>
 
-                </div>
-                <div class="link">
-
-                    <h3>Lorem</h3>
-                    <ul>
-                        <li><a href="#">Nadin Manzur</a></li>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Lorem</a></li>
-                    </ul>
-
-                    <h3>Lorem</h3>
-                    <ul>
-                        <li><a href="#">Marilis Londoño</a></li>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Lorem</a></li>
-                    </ul>
 
                 </div>
 
             </div>
              
             <div class="footer-copy">
-                <p> Accede a Nuestro Formulario </p>
+                <p> Universidad libre </p>
             </div>
 
             
         </div>
 
-        <main class="contact container">
-            <h2>Formulario de Reciclaje</h2>
-            <button class="recilaje" onclick="openRecycleForm()">Abrir formulario</button>
-        </main>
-
-        
         <script src="reciclaje.js"></script>
         
         

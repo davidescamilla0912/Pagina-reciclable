@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Reciclaje</title>
+    <link rel="stylesheet" href="/PaginasEstilos/formulario.css">
+</head>
+<body>
+    <h2>Formulario de Reciclaje</h2>
+    <form onsubmit="generateTicket(event)">
+        <label for="name">Nombre:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="id">CC:</label><br>
+        <input type="text" id="id" name="id" required><br>
+
+        <label for="material">Tipo de Material:</label><br>
+         <select id="material" name="material" class="material-select" required>
+         <option value="" disabled selected>Selecciona un material</option>
+         <option value="Papel">Papel</option>
+         <option value="Vidrio">Vidrio</option>
+         <option value="Plastico">Plastico</option>
+         <option value="Baterias">Baterias</option>
+         <option value="Madera">Madera</option>
+         <option value="Cobre">Cobre</option>
+         <option value="Vidrio">Vidrio</option>
+         <option value="Aluminio">Aluminio</option>
+</select><br>
+
+        <label for="quantity">Cantidad (kg):</label><br>
+        <input type="number" id="quantity" name="quantity" step="0.01" required><br>
+
+        <label for="rate">Precio por kg (COP):</label><br>
+        <input type="number" id="rate" name="rate" step="1" value="3000" required><br>
+
+        <button type="submit">Calcular Pago</button>
+    </form>
+
+    <div id="ticket" style="display:none;">
+        <h3>BOLETO DE RECICLAJE</h3>
+        <p><strong>Nombre:</strong> <span id="ticket-name"></span></p>
+        <p><strong>CC:</strong> <span id="ticket-id"></span></p>
+        <p><strong>Tipo de Material:</strong> <span id="ticket-material"></span></p>
+        <p><strong>Cantidad (kg):</strong> <span id="ticket-quantity"></span> kg</p>
+        <p><strong>Precio por kg:</strong> <span id="ticket-rate"></span> COP</p>
+        <p><strong>Total a Pagar:</strong> <span id="ticket-total"></span> COP</p>
+    </div>
+
+    <script src="/PaginaLogica/logica.js"></script> 
+</body>
+</html>
